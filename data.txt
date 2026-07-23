@@ -1,0 +1,13 @@
+commands for video
+mac --  ffplay -fflags nobuffer+discardcorrupt -flags low_delay -framedrop -sync ext -max_delay 0 -probesize 32 -analyzeduration 0 -avioflags direct udp://@:8888        
+pi --  rpicam-vid -t 0 --codec h264 --width 160 --height 120 --framerate 20 --inline --intra 5 -o udp://192.168.4.32:8888
+
+ip address
+mac -- 192.168.4.32
+pi -- 192.168.4.92
+
+extra commads for pi
+shutdown -- sudo shutdown now
+
+notes
+can run on start with some special stuff and can make a file an exacutable for my car that contains the camra feed and then python3 car.py or whatever

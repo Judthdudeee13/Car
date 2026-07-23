@@ -1,0 +1,10 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Controller",
+            "type": "shell",
+            "command": "mpremote run blink.py & python3 car_server.py"
+        }
+    ]
+}
